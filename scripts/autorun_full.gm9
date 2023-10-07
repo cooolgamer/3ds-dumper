@@ -1,0 +1,25 @@
+# averts that the script launched
+blinkled blue
+
+# essentials
+cp -w -o "M:/boot9.mem" "0:/boot9.bin"
+cp -w -o "M:/otp.mem" "0:/otp.bin"
+cp -w -o "M:/otp_dec.mem" "0:/otp_dec.bin"
+cp -w -o "M:/nand_cid.mem" "0:/nand_cid.bin"
+
+# nand image and partitions (full dump)
+cp -w -o "S:/agbsave.bin" "0:/agbsave.bin"
+cp -w -o "S:/firm0.bin" "0:/firm0.bin"
+cp -w -o "S:/firm1.bin" "0:/firm1.bin"
+cp -w -o "S:/sector0x96.bin" "0:/sector0x96.bin"
+cp -w -o "S:/nand.bin" "0:/nand.bin"
+cp -w -o "S:/ctrnand_full.bin" "0:/ctrnand_full.bin"
+cp -w -o "S:/ctrnand_fat.bin" "0:/ctrnand_fat.bin"
+cp -w -o "S:/twlmbr.bin" "0:/twlmbr.bin"
+cp -w -o "S:/twln.bin" "0:/twln.bin"
+cp -w -o "S:/twlp.bin" "0:/twlp.bin"
+
+# averts and end the script
+blinkled green
+echo "a"
+poweroff

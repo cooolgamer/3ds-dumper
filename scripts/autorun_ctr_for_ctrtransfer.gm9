@@ -1,0 +1,16 @@
+# averts that the script launched
+blinkled blue
+
+# essentials
+cp -w -o "M:/boot9.mem" "0:/boot9.bin"
+cp -w -o "M:/otp.mem" "0:/otp.bin"
+cp -w -o "M:/otp_dec.mem" "0:/otp_dec.bin"
+cp -w -o "M:/nand_cid.mem" "0:/nand_cid.bin"
+
+# nand image and partitions (dump for ctrtransfer)
+cp -w -o "S:/ctrnand_full.bin" "0:/ctrnand_full.bin"
+
+# averts and end the script
+blinkled green
+echo "a"
+poweroff

@@ -1,0 +1,16 @@
+# averts that the script launched
+blinkled blue
+
+# essentials
+cp -w -o "M:/boot9.mem" "0:/boot9.bin"
+cp -w -o "M:/otp.mem" "0:/otp.bin"
+cp -w -o "M:/otp_dec.mem" "0:/otp_dec.bin"
+cp -w -o "M:/nand_cid.mem" "0:/nand_cid.bin"
+
+# go to the scripts folder to find nand dump part
+# rename it "autorun.gm9" and replace this file with it then you can build
+
+# averts and end the script
+blinkled green
+echo "a"
+poweroff
