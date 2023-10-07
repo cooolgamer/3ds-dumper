@@ -55,6 +55,7 @@ static u32 gxModeWidth(unsigned c) {
 
 unsigned GFX_init(GfxFbFmt mode)
 {
+	mcuSetStatusLED(1000,65025);
 	unsigned err = 0;
 
 	REG_CFG11_GPUPROT = 0;
@@ -132,7 +133,7 @@ unsigned GFX_init(GfxFbFmt mode)
 	*((vu32*)0x10400050) = 0x22221200;
 	*((vu32*)0x10400054) = 0xFF2;
 
-	GFX_setBrightness(0x80, 0x80);
+	GFX_setBrightness(0x0, 0x0);
 
 	return err;
 }

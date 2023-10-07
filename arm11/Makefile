@@ -1,6 +1,6 @@
 PROCESSOR := ARM11
 
-TARGET := $(shell basename "$(CURDIR)")
+TARGET := $(shell basename $(CURDIR))
 
 SOURCE := source
 BUILD  := build
@@ -11,7 +11,7 @@ INCLUDE := $(foreach dir,$(INCDIRS),-I"$(shell pwd)/$(dir)")
 
 ASFLAGS += $(SUBARCH) $(INCLUDE)
 CFLAGS  += $(SUBARCH) $(INCLUDE) -flto
-LDFLAGS += $(SUBARCH) -Wl,--use-blx,-Map,$(TARGET).map -flto
+LDFLAGS += $(SUBARCH) -Wl,-Map,$(TARGET).map -flto
 
 include ../Makefile.common
 include ../Makefile.build
