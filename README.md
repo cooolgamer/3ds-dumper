@@ -1,7 +1,7 @@
 # 3DS Dumper
 
 ## What is this?
-3DS dumper is a fork of Godmode9 that was made to work on 3ds without any screens to dump files from it even if it's not usable. This is why this fork implemented LED indicator (thanks to Gruetzig on discord for the code).
+3DS dumper is a fork of Godmode9 that was made to work on 3ds without any screens to dump files from it even if it's not usable. This is why this fork implemented LED indicator (thanks to Gruetzig on discord for the led code).
 
 ## How to use
 
